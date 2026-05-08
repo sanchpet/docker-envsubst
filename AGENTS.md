@@ -57,3 +57,16 @@ pre-commit run --all-files
 ## Versioning
 
 The image version is driven by `ARG GETTEXT_VERSION` in `Dockerfile`. Renovate updates it automatically. To bump manually — change the ARG value and push to `main`.
+
+## Pull requests
+
+When a feature branch is ready, always:
+
+1. Push the branch to origin
+2. Open a PR against `main` with assignee `sanchpet`:
+
+```bash
+gh pr create --assignee sanchpet --base main --title "..." --body "..."
+```
+
+1. Return the PR URL to the user.
